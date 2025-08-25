@@ -1,8 +1,10 @@
 import { AuthProvider } from "react-admin";
 
+const apiUrl = "https://localhost:7108/api";
+
 export const authProvider: AuthProvider = {
     login: async ({ email, password }) => {
-        const response = await fetch("/api/Auth/login", {
+        const response = await fetch(`${apiUrl}/Auth/login`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
@@ -39,7 +41,7 @@ export const authProvider: AuthProvider = {
     },
 
     checkAuth: async () => {
-        const response = await fetch("/api/Auth/check", {
+        const response = await fetch(`${apiUrl}/Auth/check`, {
             method: "GET",
             credentials: "include",
         });

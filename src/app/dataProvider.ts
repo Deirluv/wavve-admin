@@ -1,6 +1,6 @@
 import { fetchUtils, DataProvider } from "react-admin";
 
-const apiUrl = "http://localhost:5000/api";
+const apiUrl = "https://localhost:7108/api";
 
 const httpClient = async (url: string, options: any = {}) => {
     if (!options.headers) {

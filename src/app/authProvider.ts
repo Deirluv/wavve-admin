@@ -32,16 +32,16 @@ export const authProvider: AuthProvider = {
     },
 
     logout: async () => {
-        // await fetch("/api/Auth/logout", {
-        //     method: "POST",
-        //     credentials: "include",
-        // }).catch(() => {});
-        //
+        await fetch(`${apiUrl}/Auth/checkAuth`, {
+            method: "POST",
+            credentials: "include",
+        }).catch(() => {});
+
         return Promise.resolve();
     },
 
     checkAuth: async () => {
-        const response = await fetch(`${apiUrl}/Auth/check`, {
+        const response = await fetch(`${apiUrl}/Auth/checkAuth`, {
             method: "GET",
             credentials: "include",
         });

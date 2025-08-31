@@ -6,27 +6,27 @@ export const UsersList = () => (
             <DataTable.Col source="id" />
             <DataTable.Col source="username" />
             <DataTable.Col source="email" />
-            <DataTable.Col source="role" />
+            {/*<DataTable.Col source="role" />*/}
         </DataTable>
     </List>
 );
 
-export const UsersEdit = () => (
-    <Edit>
-        <SimpleForm>
-            <TextInput source="username" />
-            <TextInput source="email" />
-            <TextInput source="role" />
-        </SimpleForm>
-    </Edit>
-);
-
-export const UsersCreate = () => (
-    <Create>
-        <SimpleForm>
-            <TextInput source="username" />
-            <TextInput source="email" />
-            <TextInput source="role" />
-        </SimpleForm>
-    </Create>
-);
+// export const UsersEdit = () => (
+//     <Edit>
+//         <SimpleForm>
+//             <TextInput source="username" />
+//             <TextInput source="email" />
+//             <TextInput source="role" />
+//         </SimpleForm>
+//     </Edit>
+// );
+//
+// export const UsersCreate = () => (
+//     <Create>
+//         <SimpleForm>
+//             <TextInput source="username" />
+//             <TextInput source="email" />
+//             <TextInput source="role" />
+//         </SimpleForm>
+//     </Create>
+// );
